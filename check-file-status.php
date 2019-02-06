@@ -1,5 +1,6 @@
 <?php
 //simple script to check the status of a file in a directory. Trigger it with a cron job or by vising this file in a web browser.
+//cron job can be something like this: * * * * wget -O http:path.to/check-file-status.php >/dev/null 2>&1
 $filename = 'file.xml';
 $filemtime = filemtime($filename);
 $time = 129600; //36 hours in seconds
